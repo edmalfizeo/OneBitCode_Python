@@ -30,9 +30,9 @@ class Travel:
         prices = self.get_prices()
 
         if destination not in places:
-            raise ValueError("Invalid destination")
+            raise ValueError("\nInvalid destination")
         if transport not in transports:
-            raise ValueError("Invalid transport")
+            raise ValueError("\nInvalid transport")
 
         choosen_destination = places.index(destination)
 
