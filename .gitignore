@@ -1,0 +1,13 @@
+# Ignorar arquivos de configuração sensíveis
+.env
+
+# Ignorar diretórios de ambiente virtual
+venv/
+.venv/
+
+# Ignorar arquivos e diretórios de cache
+__pycache__/
+*.pyc
+*.pyo
+
+
