@@ -1,0 +1,8 @@
+Tipo,Valor,Forma_pagamento
+Energia,220,Dinheiro
+Água,100,Cartão
+Livros,50,Pix
+Telefone,100,Boleto
+Aluguel,1000,Dinheiro
+Remedio,150,Pix
+Jogos,200,Cartão
