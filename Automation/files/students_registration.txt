@@ -1,0 +1,10 @@
+Alice Johnson,alice.johnson@example.com,20
+Bob Smith,bob.smith@example.com,22
+Carol Williams,carol.williams@example.com,19
+David Brown,david.brown@example.com,21
+Eva Davis,eva.davis@example.com,23
+Frank Miller,frank.miller@example.com,20
+Grace Wilson,grace.wilson@example.com,22
+Henry Moore,henry.moore@example.com,21
+Isabella Taylor,isabella.taylor@example.com,19
+Jack Anderson,jack.anderson@example.com,23
