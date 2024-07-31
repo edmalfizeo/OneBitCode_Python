@@ -1,2 +1,0 @@
-Olá mundo. Estamos aprendendo
-automatizar processos com Python!
