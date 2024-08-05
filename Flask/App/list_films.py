@@ -1,13 +1,16 @@
 import urllib.request
 import json
+import os
+
+api_key = os.environ.get('API_KEY')
 
 def result_films(type):
     if type == "Popular":
-        url = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=af5bcc9570d838260f1c1e42aac760c9'
+        url = f'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key={api_key}'
     elif type == "Animation":
-        url = 'https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&with_genres=16&api_key=af5bcc9570d838260f1c1e42aac760c9'
+        url = f'https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&with_genres=16&api_key={api_key}'
     elif type == "Nota_10":
-        url = 'https://api.themoviedb.org/3/discover/movie?primary_release_year=2010&sort_by=vote_average.desc&api_key=af5bcc9570d838260f1c1e42aac760c9'
+        url = f'https://api.themoviedb.org/3/discover/movie?primary_release_year=2010&sort_by=vote_average.desc&api_key={api_key}'
         
     answer = urllib.request.urlopen(url)
 
