@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2 style="text-align: center; margin-top: 1.2rem;">Students Grades</h2>
+    <hr>
+    <form class="form-group" action="{{url_for('diary')}}"  method="post">
+        <label for="">Student</label>
+        <input class="form-control" type="text" name="student" required>
+
+        <label for="">Grade</label>
+        <input class="form-control" type="text" name="grade" style="margin-bottom: 10px;">
+        <button class="btn btn-success" style="margin-bottom: 15px;">Add</button>
+
+    </form>
+
+    {% for data in students_data %}
+    <p>
+        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapse_{{data.student}}" role="button" aria-expanded="false" aria-controls="collapse_{{data.student}}">
+                {{data.student}}
+        </a>
+      </p>
+      <div class="collapse" id="collapse_{{data.student}}">
+        <div class="card card-body">
+            Grade: {{data.grade}}
+        </div>
+      </div>
+    {% endfor %}
+
+{% endblock content %}
+    

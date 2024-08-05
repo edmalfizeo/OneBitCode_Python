@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 style="text-align: center; margin-top: 1.2rem;">Integrate HTML with Flask</h1>
+    <hr>
+    <form class="form-group" action="{{url_for('main')}}" method="post" style="margin-bottom: 10px;">
+        <label for="">Content</label>
+        <input class="form-control" type="text" name="content" style="margin-bottom: 8px;">
+        <button class="btn btn-success">Add</button>
+    </form>
+    
+    <ol class="list-group list-group-numbered">
+        {% for content in contents %}
+        <li class="list-group-item"> {{content}}</li>
+        {% endfor %}
+        
+    </ol>
+
+{% endblock content %}

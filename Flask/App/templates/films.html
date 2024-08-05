@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2 class="text-center" style="margin-top: 1.2rem;">Films List</h2>
+    <hr>
+    <div class="row">
+        {% for film in filmes %}
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="http://image.tmdb.org/t/p/w500{{film.poster_path}}" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{film.title}}</h5>
+                    <p class="card-text fixed-height">{{film.overview}}</p>
+                    <hr>
+                    <h4>Nota Media
+                        <span class="badge bg-secondary">{{film.vote_average}}</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
