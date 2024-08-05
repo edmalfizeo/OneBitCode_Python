@@ -2,7 +2,7 @@ import urllib.request
 import json
 import os
 
-api_key = os.environ.get('API_KEY')
+api_key = os.getenv('API_KEY')
 
 def result_films(type):
     if type == "Popular":
