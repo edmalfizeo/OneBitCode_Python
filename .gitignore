@@ -2,8 +2,8 @@
 .env
 
 # Ignorar diretórios de ambiente virtual
-venv/
-.venv/
+/.venv
+**/.venv/*/
 
 # Ignorar arquivos e diretórios de cache
 __pycache__/

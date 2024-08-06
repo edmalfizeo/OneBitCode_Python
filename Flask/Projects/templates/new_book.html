@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="text-center" style="margin-top: 1.2rem;">Add Book</h2>
+<hr>
+<form action="{{url_for('add_book')}}" method="post" class="form-group">
+    <label for="">Title</label>
+    <input class="form-control" type="text" name="title" placeholder="Book Title" required style="margin-bottom: 0.6rem;">
+
+    <label for="">Description</label>
+    <input class="form-control" type="text" name="description" placeholder="Book Description" required style="margin-bottom: 0.6rem;">
+
+    <label for="">Price</label>
+    <input class="form-control" type="number" name="price" placeholder="Book Price" required  style="margin-bottom: 1.2rem;">
+
+    <button class="btn btn-success">Add</button>
+</form>
+{% endblock content %}
