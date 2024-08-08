@@ -1,19 +1,57 @@
-# Ignorar arquivos de configuração sensíveis
-.env
+# Ambientes Virtuais
+**/.venv/
+**/venv/
+**/env/
 
-# Ignorar diretórios de ambiente virtual
-/.venv
-**/.venv/*/
+# Arquivos de Cache do Python
+**/__pycache__/
+**/*.py[cod]
 
-# Ignorar arquivos e diretórios de cache
-__pycache__/
-*.pyc
-*.pyo
+# Arquivos de Configuração de IDEs/Editors
+**/.vscode/
+**/.idea/
+**/*.sublime-project
+**/*.sublime-workspace
+**/.*.swp
+**/.*.swo
 
-# Ignore build and dist folders
-build/
-dist/
+# Logs
+**/*.log
 
-# Ignore PyInstaller spec files
-*.spec
+# Arquivos Temporários do Sistema Operacional
+**/.DS_Store
+**/Thumbs.db
+**/.Trash-*
+
+# Builds e Distribuições
+**/build/
+**/dist/
+**/*.egg-info/
+
+# Configurações Sensíveis e Secretas
+**/.env
+**/.env.*
+**/.secret
+
+# Arquivos de Pacotes de Instalação
+**/*.spec
+
+# Arquivos Binários e Executáveis
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+
+# Outros Arquivos Temporários
+**/*.tmp
+**/*.temp
+
+# Arquivos Gerados por Testes
+**/.coverage
+**/.tox/
+**/nosetests.xml
+
+# Arquivos de Configuração de Contêineres
+**/.dockerignore
+**/Dockerfile
 
